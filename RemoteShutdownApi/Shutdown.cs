@@ -18,7 +18,7 @@ namespace RemoteShutdownApi
 
                     ProcessStartInfo startInfo = new ProcessStartInfo();
                     startInfo.FileName = "shutdown";
-                    startInfo.Arguments = "/r /f /t 0";
+                    startInfo.Arguments = "/p /f /t 0";
                     startInfo.UseShellExecute = true;
                     startInfo.Verb = "runas";
                     process.StartInfo = startInfo;
